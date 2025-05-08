@@ -7,8 +7,7 @@ const PORT = 5000;
 app.use(cors());
 app.use(express.json());
 
-// Test route
-app.get("/api/test", (req, res) => {
+app.get("/", (req, res) => {
   res.json({ message: "Hello World" });
 });
 
