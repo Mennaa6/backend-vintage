@@ -28,18 +28,18 @@ app.use((err, req, res, next) => {
 });
 
 // Start the server if DB connection succeeds
-const PORT = process.env.PORT || 3000;
-const start = async () => {
-  try {
-    await connectDB(process.env.DB);
-    app.listen(PORT, () => {
-      console.log(`Server running on port ${PORT}`);
-    });
-  } catch (err) {
-    console.error("Failed to connect to DB:", err);
-  }
-};
+// const PORT = process.env.PORT || 3000;
+// const start = async () => {
+//   try {
+//     await connectDB(process.env.DB);
+//     app.listen(PORT, () => {
+//       console.log(`Server running on port ${PORT}`);
+//     });
+//   } catch (err) {
+//     console.error("Failed to connect to DB:", err);
+//   }
+// };
 
-start();
+// start();
 
 module.exports = app;
